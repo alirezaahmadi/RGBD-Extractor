@@ -6,10 +6,14 @@ good Luck
 
 ## To run the code 
 run something like: 
-  
+
+```python
   python rgbd-extractor.py "Number of images to extract." "Input ROS bag." "Output directory." "Image topic." "depth: passthrough, colored image: bgr8"
-  
-Example: 
+```
+
+Example:
+
+```python
   python rgbd-extractor.py 10 ~/bag_file.bag ~/bag_file/depth /camera/depth/registered passthrough
-  
+```
 
