@@ -4,4 +4,12 @@ This scrip gives you images which you can directly feed a 3D registration algori
 
 good Luck 
 
+## To run the code 
+run something like: 
+  
+  python rgbd-extractor.py "Number of images to extract." "Input ROS bag." "Output directory." "Image topic." "depth: passthrough, colored image: bgr8"
+  
+Example: 
+  python rgbd-extractor.py 10 ~/bag_file.bag ~/bag_file/depth /camera/depth/registered passthrough
+  
 
