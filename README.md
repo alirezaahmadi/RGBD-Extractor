@@ -17,3 +17,8 @@ Example:
   python rgbd-extractor.py 10 ~/bag_file.bag ~/bag_file/depth /camera/depth/registered passthrough
 ```
 
+for rgb or depth:
+python rgbd-extractor.py numbe_of_frames_to extract --bagfile bagfile_address.bag  --outputA folder_depth_frames --topicA topic_name  --encoding bgr8 or passthrough(depth)
+
+for syncing rgb and dpeth and then extracting:
+python rgbd-extractor.py 10  --bagfile  ~/Downloads/Bagfiles/2020-11-12-10-04-00.bag --outputA ~/rgb --outputB ~/Depth --topicB /phenorob_rs_I_right/aligned_depth_to_color/image_raw --topicA /phenorob_rs_I_right/color/image_raw --sync true
